@@ -1,8 +1,6 @@
 def squareList(begValue, endValue):
 
     lst = []
-    oddLst = []
-    evenLst = []
     lstValue = 0
 
     for i in range(begValue, endValue + 1):
@@ -14,19 +12,56 @@ def squareList(begValue, endValue):
     for i in lst:
         if i%2 == 0:
             evenLst.append(i)
-            return oddLst
         else:
             oddLst.append(i)
-            return evenLst
+
+    return lst,evenLst,oddLst
         
 
-    return lst
 
 begInput = int(input('enter the beginning range value: '))
 endInput = int(input('enter the end range value: '))
 
 
+
+evenLst = []
+oddLst = []
+
+
 print("list of square values: ",squareList(begInput, endInput))  
+print("odd number of squres list: ",oddLst)
+print("even number of squres list: ", evenLst)
+
+ 
+
+  
+
+   
+
+
+
+
+     
+
+
+
+
+
+      
+
+       
+
+        
+
+
+
+
+          
+
+
+
+
+
 
  
 
